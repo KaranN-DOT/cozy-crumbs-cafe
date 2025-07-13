@@ -1,0 +1,66 @@
+.booking-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.booking-form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.booking-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.booking-form input, .booking-form select, .booking-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.booking-form button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #d9a066;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.booking-form button:hover {
+    background-color: #b07b3f;
+}
+.clock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 8px solid #d9a066;
+    border-radius: 50%;
+    margin: 1rem auto;
+    background: white;
+}
+.hand {
+    position: absolute;
+    width: 50%;
+    background: #333;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+.hour {
+    height: 4px;
+}
+.minute {
+    height: 3px;
+}
+.second {
+    height: 2px;
+    background: red;
+}

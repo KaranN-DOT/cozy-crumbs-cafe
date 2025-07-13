@@ -1,0 +1,56 @@
+<!-- booking.html (concept) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table - Cozy Crumbs Café</title>
+    <link rel="stylesheet" href="booking style.css" />
+</head>
+
+<body>
+    <section class="booking-form">
+        <h2>Book a Table</h2>
+        <div class="clock-container">
+            <canvas id="clockCanvas" width="200" height="200"></canvas>
+            <p class="clock-note">Pick your time below</p>
+        </div>
+        <form action="Booking Confirmation page.html" method="post" id="bookingForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Time Slot</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6+</option>
+            </select>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" rows="3" placeholder="Optional"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+
+    <script src="booking.js"></script>
+</body>
+
+</html>
